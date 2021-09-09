@@ -1,0 +1,15 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "crud-component": {
+      "description": "A CRUD Alur Kerja schematic.",
+      "factory": "./crud-component/index#crudComponent",
+      "schema": "./crud-component/schema.json"
+    },
+    "bpmn-component": {
+      "description": "A BPMN Alur Kerja schematic.",
+      "factory": "./bpmn-component/index#bpmnComponent",
+      "schema": "./bpmn-component/schema.json"
+    }
+  }
+}
