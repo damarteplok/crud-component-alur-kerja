@@ -9,6 +9,7 @@ import {environment} from '../../../environments/environment';
 export class <%= classify(name) %>Service extends TableService<any> implements OnDestroy {
     //OVERRIDE THIS
     API_URL = `${environment.apiUrl}/crud/<%= dasherize(name) %>`;
+    myHeader = null;
     constructor(@Inject(HttpClient) http) {
         super(http);
     }
@@ -19,7 +20,9 @@ export class <%= classify(name) %>Service extends TableService<any> implements O
 
     getFormArr() {
         const url = this.API_URL + '/form';
-        return this.http.get<any>(url);
+        return this.http.get<any>(url, {
+            headers: this.myHeader
+        });
     }
 
 }
