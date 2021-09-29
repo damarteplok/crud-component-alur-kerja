@@ -32,6 +32,7 @@ export class <%= classify(name) %>Component extends BaseCrudBpmnPagesComponent {
         modalRef.componentInstance.arrParamsGroup = transFormArrVar;
         modalRef.componentInstance.arrvar = '1';
         modalRef.componentInstance.arrDecision = transFormArrDecision;
+        modalRef.componentInstance.typeDecision = typeDecision;
 
         if (type !== 'edit') {
             // Show View
