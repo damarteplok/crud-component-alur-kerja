@@ -1,6 +1,6 @@
 {
   "name": "crud-component-alur-kerja",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
